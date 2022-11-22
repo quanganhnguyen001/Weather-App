@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_application/screens/home_screens.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,16 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const HomeScreens(),
     );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
